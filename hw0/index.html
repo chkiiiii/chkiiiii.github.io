@@ -1,5 +1,14 @@
 <button class="button-62">請點我</button>
-
+<script>
+    let msg = ["你今天也好棒喔(灬ºωº灬)", "快要放假了好開心(✿ﾟ▽ﾟ)ノ", "欸欸 要一起來念書嗎(๑•̀ㅂ•́)و✧"];
+    let i = 0;
+    
+    function show()
+    {
+    	document.getElementById("text").innerHTML = msg[i%3];
+    	++i;
+    }
+</script>
 <style>
   <!-- HTML !-->
 <button class="button-62" role="button">Button 62</button>
@@ -34,12 +43,4 @@
 .button-62:not([disabled]):hover {
   box-shadow: 0 0 .25rem rgba(0, 0, 0, 0.5), -.125rem -.125rem 1rem rgba(239, 71, 101, 0.5), .125rem .125rem 1rem rgba(255, 154, 90, 0.5);
 }
-<script>
-let msg = ["aaa", "bbb", "ccc"];
-let i = 0;
-function show()
-{
-document.getElementById("text").innerHTML = msg[i%3];
-++i;
-}
-</script>
+
