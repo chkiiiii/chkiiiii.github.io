@@ -50,7 +50,11 @@ function draw()
 		j++;
 	}
 	
-	if((x-x2)*(x-x2)+(y-y2)*(y-y2)<=(r+r2)*(r+r2))  [dx,dy,dx2,dy2]=[dx2,dy2,dx,dy];
+	if((x-x2)*(x-x2)+(y-y2)*(y-y2)<=(r+r2)*(r+r2)){ 
+		j++;
+		i++;
+		[dx,dy,dx2,dy2]=[dx2,dy2,dx,dy];}
+	
 		drawBall(x, y, r, color[i%3]);
 		drawBall(x2, y2, r2, color2[j%3]);
     requestAnimationFrame(draw);
